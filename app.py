@@ -8,7 +8,7 @@ import streamlit as st
 st.set_page_config(page_title="FMGC Product Orders Analysis", page_icon="📊", layout="wide")
 st.title("FMGC Product Orders Analysis")
 
-# Add GitHub icon with link to the top right
+# Add GitHub icon with a button link to the top right
 st.markdown(
     """
     <style>
@@ -24,11 +24,30 @@ st.markdown(
     .github-link img {
         width: 32px;
     }
+    .github-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #24292e;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .github-button:hover {
+        background-color: #444;
+    }
     </style>
-    <a href="https://github.com/yourusername/yourrepository" class="github-link">
+
+    <a href="https://github.com/shubham9760/FMGC-Project" class="github-link" target="_blank">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Link">
     </a>
-    """, 
+
+    <a href="" class="github-button" target="_blank">
+        View on GitHub
+    </a>
+    """,
     unsafe_allow_html=True
 )
 
